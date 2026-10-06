@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated locally — may contain private keys and PFX passwords. Never commit.
+output/
+backup-*/
+
+# Belt and braces, wherever they appear.
+/*.pfx
+*.password.txt
