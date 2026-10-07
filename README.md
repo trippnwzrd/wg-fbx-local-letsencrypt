@@ -95,3 +95,7 @@ sudo python3 acme.py         # required for certbot (port 80), TFTP (port 69), /
 `--host/-h`, `--port/-p`, `--user/-u` override the defaults
 
 `--showonly` just prints the web server certificate assessment and exits
+
+## Disclaimer
+
+This is not an official WatchGuard tool and is not supported by WatchGuard. Use at your own risk.
