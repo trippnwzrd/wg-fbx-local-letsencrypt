@@ -34,6 +34,8 @@ DEFAULT_PORT = 4118
 DEFAULT_HOST = "10.0.1.1"
 DEFAULT_USER = "status"
 
+__version__ = "1.0.0"
+
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
 RED = "\033[91m"
@@ -1649,6 +1651,8 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         add_help=False)
     p.add_argument("--help", action="help", help="show this help message and exit")
+    p.add_argument("--version", action="version", version=f"%(prog)s {__version__}",
+                   help="show version and exit")
     g = p.add_argument_group("connection")
     g.add_argument("-h", "--host", metavar="HOST", default=os.getenv("FB_HOST", DEFAULT_HOST),
                    help=f"Firebox IP address or FQDN (default {DEFAULT_HOST})")
